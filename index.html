@@ -12,13 +12,43 @@
       h1 {
         font-size: 40px;
         color: white;
+        animation: text-focus-in 1s ease-out forwards;
+      }
+
+      @keyframes text-focus-in {
+        from {
+          transform: scale(0.5);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+        animation: img-bounce-in 1s ease-out forwards;
+      }
+
+      @keyframes img-bounce-in {
+        from {
+          transform: translateY(-200px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
       }
     </style>
   </head>
   <body>
     <h1>Welcome to sudo-arshia</h1>
     <p>
-      <img src="https://via.placeholder.com/150" alt="sudo-arshia logo">
+      <img src="https://visualstudio.microsoft.com/wp-content/uploads/2021/09/Octocat-1.svg" alt="sudo-arshia logo">
     </p>
     <p>
       We're glad you're here!<br>
